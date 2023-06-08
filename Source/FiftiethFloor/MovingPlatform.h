@@ -15,16 +15,19 @@ class FIFTIETHFLOOR_API AMovingPlatform : public AStaticMeshActor
 	GENERATED_BODY()
 	
 private:
-	UPROPERTY(EditAnywhere, Category = "MoveVariable")
-	float MoveSpeedX;
+	
+	FVector GlobalTargetLocation;
+	FVector GlobalStartLocation;
 
-	UPROPERTY(EditAnywhere, Category = "MoveVariable")
-		float MoveSpeedY;
-
-	UPROPERTY(EditAnywhere, Category = "MoveVariable")
-		float MoveSpeedZ;
 
 public:
+
+	UPROPERTY(EditAnywhere, Category = "MoveVariable")
+	float MoveSpeed;
+
+	UPROPERTY(EditAnywhere, meta = (MakeEditWidget = true))
+	FVector TargetLocation;
+
 	AMovingPlatform();
 
 	virtual void BeginPlay() override;
