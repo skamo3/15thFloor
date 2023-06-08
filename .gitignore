@@ -74,5 +74,5 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Big data content file ignore
-Content/
+# Content/
 
