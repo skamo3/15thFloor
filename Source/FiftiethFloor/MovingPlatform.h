@@ -19,6 +19,9 @@ private:
 	FVector GlobalTargetLocation;
 	FVector GlobalStartLocation;
 
+protected:
+	virtual void BeginPlay() override;
+
 
 public:
 
@@ -29,8 +32,6 @@ public:
 	FVector TargetLocation;
 
 	AMovingPlatform();
-
-	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaSeconds) override;
 
