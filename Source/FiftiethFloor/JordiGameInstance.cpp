@@ -9,13 +9,12 @@
 UJordiGameInstance::UJordiGameInstance(const FObjectInitializer& ObjectInitializer)
 	:Super(ObjectInitializer)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Test in Constructor"));
+
 }
 
 void UJordiGameInstance::Init()
 {
-
-	UE_LOG(LogTemp, Warning, TEXT("Test in Init function"));
+	Super::Init();
 
 }
 

@@ -14,4 +14,18 @@ class FIFTIETHFLOOR_API AMainMenuGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+private:
+
+	UPROPERTY(EditDefaultsOnly, Category = "Menu")
+	TSubclassOf<class UUserWidget> MenuClass;
+
+	class UJordiMainMenuWidget* Menu;
+
+
+public:
+
+	AMainMenuGameMode();
+
+	virtual void BeginPlay() override;
+
 };
